@@ -13,7 +13,7 @@ public class Main {
          */
         System.out.println("1 задача");
 //1
-        int[] massiv123 = new int[]{1, 2, 3};
+        int[] massiv = new int[]{1, 2, 3};
 //2
         float[] massivDrobn = {1.57f, 7.654f, 9.986f};
 //3
@@ -26,9 +26,9 @@ public class Main {
 Запятая между последним элементом одного массива и первым элементом следующего не нужна.
          */
         System.out.println("2 задача");
-        for (int i=0; i<massiv123.length; i++){
-            System.out.print(massiv123[i]);
-            if (i<massiv123.length-1) System.out.print(", ");
+        for (int i=0; i<massiv.length; i++){
+            System.out.print(massiv[i]);
+            if (i<massiv.length-1) System.out.print(", ");
         }
         System.out.println("");
         for (int y=0; y<massivDrobn.length; y++){
@@ -47,8 +47,8 @@ public class Main {
 Запятая между последним элементом одного массива и первым элементом следующего не нужна.
  */
         System.out.println("3 задача");
-        for (int i=massiv123.length-1; i>=0; i--){
-            System.out.print(massiv123[i]);
+        for (int i=massiv.length-1; i>=0; i--){
+            System.out.print(massiv[i]);
             if (i>0) System.out.print(", ");
         }
         System.out.println("");
@@ -69,17 +69,13 @@ public class Main {
 Распечатайте результат преобразования в консоль.
  */
         System.out.println("4 задача");
-        for (int i=0; i<massiv123.length; i++){
-            if (massiv123[i]%2!=0) {massiv123[i]=massiv123[i]+1;}
+        for (int i=0; i<massiv.length; i++){
+            if (massiv[i]%2!=0) {massiv[i]=massiv[i]+1;}
 
-            System.out.print(massiv123[i]);
-            if (i<massiv123.length-1) System.out.print(", ");
+            System.out.print(massiv[i]);
+            if (i<massiv.length-1){
+                System.out.print(", ");
+            }
         }
-
-
-
-
-
-
     }
 }
